@@ -14,8 +14,8 @@ const ChooseUser = () => {
                     hover:scale-110 hover:border-white'
                     onClick={() => handleUser(1)}  
                 >
-                    <p className='font-bold text-2xl sm:text-4xl text-center py-2 text-green-600'>Edu</p>
-                    <img src="/img/messi.webp" alt="foto ledu"
+                    <p className='font-bold text-2xl sm:text-4xl text-center py-2 text-green-600'>User1</p>
+                    <img src="/img/gigachad.webp" alt="user1 profile"
                     className='w-auto sm:w-52 border-t-2 border-green-600 hover:border-white transition-colors'
                     />
                 </button>
@@ -25,8 +25,8 @@ const ChooseUser = () => {
                     hover:scale-110 hover:border-white'
                     onClick={() => handleUser(2)}
                 >
-                    <p className='font-bold text-2xl sm:text-4xl text-center py-2 text-green-600'>Janis</p>
-                    <img src="/img/kim.webp" alt="foto janis"
+                    <p className='font-bold text-2xl sm:text-4xl text-center py-2 text-green-600'>User2</p>
+                    <img src="/img/zendaya.webp" alt="user2 profile"
                     className='w-auto sm:w-52 border-t-2 border-green-600 hover:border-white transition-colors'
                     />
                 </button>

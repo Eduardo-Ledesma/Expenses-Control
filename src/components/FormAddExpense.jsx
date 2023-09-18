@@ -55,14 +55,14 @@ function FormAddExpense() {
         e.preventDefault()
 
         if(!category.length && !type.length && price <= 0) {
-            setCategoryAlert({ msg: 'Elegime una categoria fiera'})
-            setTypeAlert({ msg: 'Poneme un nombre fiera'})
-            setPriceAlert({ msg: 'Poneme un precio fiera'})
+            setCategoryAlert({ msg: 'Elige una categoría'})
+            setTypeAlert({ msg: 'Agrega un nombre'})
+            setPriceAlert({ msg: 'Define un precio'})
             return
         }
-        if(!category.length) return setCategoryAlert({ msg: 'Elegime una categoria fiera'})
-        if(!type.trim()) return setTypeAlert({ msg: 'Poneme un nombre fiera'})
-        if(price <= 0) return setPriceAlert({ msg: 'Poneme un precio fiera'})
+        if(!category.length) return setCategoryAlert({ msg: 'Elige una categoría'})
+        if(!type.trim()) return setTypeAlert({ msg: 'Agrega un nombre'})
+        if(price <= 0) return setPriceAlert({ msg: 'Define un precio'})
         
         if(id) {
             handleConfirmEditExpense({ category, type, price, id, user: expense.user }) // Editar gasto

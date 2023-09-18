@@ -23,12 +23,12 @@ const ShowTotal = () => {
     const calculateDivision = () => {
         if(expensesUser1 > expensesUser2) {
             setDivision((expensesUser1 - expensesUser2) / 2)
-            setDebt('Janis')
-            setFavor('Edu')
+            setDebt('User2')
+            setFavor('User1')
         } else {
             setDivision((expensesUser2 - expensesUser1) / 2)
-            setDebt('Edu')
-            setFavor('Janis')
+            setDebt('User1')
+            setFavor('User2')
         }
     }
 
@@ -53,11 +53,11 @@ const ShowTotal = () => {
                 { buys > 0 && <p className="mb-1 text-lg">Compras: <span className="text-amber-500 font-bold">${buys}</span></p> }
                 { cat > 0 && <p className="mb-1 text-lg">Gato: <span className="text-amber-500 font-bold">${cat}</span></p> }
                 { allowed > 0 && <p className="text-lg">Permitidos: <span className="text-amber-500 font-bold">${allowed}</span></p> }
-                <p className="mb-1 mt-4 text-lg">Edu gastó: <span className="text-amber-500 font-bold">${expensesUser1}</span></p>
-                <p className="text-lg">Janis gastó: <span className="text-amber-500 font-bold">${expensesUser2}</span></p>
+                <p className="mb-1 mt-4 text-lg">User1 gastó: <span className="text-amber-500 font-bold">${expensesUser1}</span></p>
+                <p className="text-lg">User2 gastó: <span className="text-amber-500 font-bold">${expensesUser2}</span></p>
                 { division > 0 ? 
                     <p className="text-2xl mt-4 text-green-500">{debt} debe: <span className="text-amber-500 font-bold">${division}</span> a {favor}.</p> :
-                    <p className="text-2xl mt-4 text-green-500">Ambos gastaron lo mismo</p>} 
+                    <p className="text-2xl mt-4 text-green-500">Ambos gastaron lo mismo.</p>} 
             </div>
 
         </>

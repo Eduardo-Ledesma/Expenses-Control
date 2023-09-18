@@ -25,7 +25,7 @@ const Expense = ({expense}) => {
             break;
     }
 
-    const userName = user === 1 ? 'Edu' : 'Janis'
+    const userName = user === 1 ? 'User1' : 'User2'
 
     const handleClick = expense => {
         Swal.fire({
